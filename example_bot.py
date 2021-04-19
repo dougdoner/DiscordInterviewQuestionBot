@@ -1,5 +1,5 @@
 import discord
-
+import secret
 client = discord.Client()
 
 
@@ -17,4 +17,4 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
 
-client.run('ODMzNzkzMTQ3MjIwOTE4MzUz.YH3gYQ.YI-ACLw9Yep9gZvtjdVgrRVI7Ms')
+client.run(secret.config_key)
